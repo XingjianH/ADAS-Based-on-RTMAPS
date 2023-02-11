@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{c19b5b9a-716d-4249-bca2-07db4ad8a462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="local_interfaces">
+      <UniqueIdentifier>{f3a7473b-4f73-42da-8313-b0ccbf9dd4e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\maps_Filtrage3D.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maps_EX4_9.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maps_compteur.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="local_interfaces\maps_Filtrage3D.h">
+      <Filter>local_interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="local_interfaces\maps_EX4_9.h">
+      <Filter>local_interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="local_interfaces\maps_compteur.h">
+      <Filter>local_interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EX4.pckinfo" />
+  </ItemGroup>
+</Project>

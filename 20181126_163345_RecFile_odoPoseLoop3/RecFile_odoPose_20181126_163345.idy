@@ -1,0 +1,16 @@
+RTMaps Remote Runtime Release v4.5.1 (build 263425) for ubuntu1604
+Copyright (c) 2000-2018 INTEMPORA S.A.
+This product is licensed to: ESIGELEC.
+Session: unspecified
+Launched at 16:33:45.096 (26/11/2018)
+[Misc]
+00:00.428378 @ Record VLP16_Eth_Connection.output(UDPSocket.output[0x8000000000001000,,,128,65537]) as rrmstream
+00:00.371302 @ Record ellipse_D.sbg_ecomdata_out(ellipse_device.sbg_ecomdata_out[0x8000000000000001,SbgEComData,,200,2064]) as user_structure_binary
+00:00.321292 @ Record Integer_constants_generator_1.output(Integer_constants_generator.output[0x8000000000000002,,,16,1]) as tabbed_text
+00:00.000000 @ Record CANPeak_1.output(CANPeak.output[0x8000000000000080,,,16,0]) as can_binary
+00:00.000000 @ Record webcamAvantOuputRGB.output(YUV2RGB.output[0x8000000000000020,,,16,0]) as jseq
+00:00.424471 @ Record UDP_SocketGateway1.output(UDPSocket.output[0x8000000000001000,,,128,65537]) as rrmstream
+00:00.829916 @ Record ButtonRecordDataSet.state0(Button.model[0x2,,,16,1]) as tabbed_text
+00:00.411622 @ Record camera_AXIS_MJPG_1.image(camera_AXIS_MJPG.image[0x8000000000000040,,,16,0]) as jseq
+00:00.942227 @ Record RawSocketClient_EventMarker.output(RawSocketClient.output[0x8000000000001000,,,16,65507]) as rrmstream
+00:00.360560 @ Record RawSocketClient_Landyns.output(RawSocketClient.output[0x8000000000001000,,,16,65507]) as rrmstream

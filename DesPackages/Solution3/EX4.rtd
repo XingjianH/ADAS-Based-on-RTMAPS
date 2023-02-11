@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.6.0" EngineVersion="4.6" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="2.1.4"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_image_processing_miscellaneous.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_image_processing_miscellaneous.pck]]></Relative></File>
+    <File Version="3.6.2"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_velodyne.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_velodyne.pck]]></Relative></File>
+    <File Version="1.0"><![CDATA[X:/adas_rtmaps/Solution3/Solution3/packages/debug/EX4.pck]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/packages/debug/EX4.pck]]></Relative></File>
+    <File Version="1.0"><![CDATA[X:/adas_rtmaps/TP3/Solution5/packages/debug/EX2.pck]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../TP3/Solution5/packages/debug/EX2.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">223103150</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="AnyColorSpaceConverter_1_1" Model="AnyColorSpaceConverter" Version="1.0.2" x="48" y="440" z="0">
+    <Input LongName="AnyColorSpaceConverter_1_1.imgInput" Name="imgInput">
+      <Property LongName="AnyColorSpaceConverter_1_1.imgInput.readerType" Type="1">0</Property>
+      <Property LongName="AnyColorSpaceConverter_1_1.imgInput.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="AnyColorSpaceConverter_1_1.IplImageOutput" Name="IplImageOutput">
+      <Property LongName="AnyColorSpaceConverter_1_1.IplImageOutput.subsampling" Type="1">1</Property>
+      <Property LongName="AnyColorSpaceConverter_1_1.IplImageOutput.fifosize" Type="1">16</Property>
+      <Property LongName="AnyColorSpaceConverter_1_1.IplImageOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="AnyColorSpaceConverter_1_1.outputPixelFormat" Type="4"><![CDATA[24|5|BGR|BGRA|GRAY|I420|IYU|RGB|RGB 555|RGB 565|RGBA|UYVY|UYY|VYUY|Y211|Y41P|YUV|YUVA|YUV 411|YUV 420|YUV 422|YUY2|YUYV|YV12|YVU9|YVYU]]></Property>
+    <Property LongName="AnyColorSpaceConverter_1_1.outputPlanar" Type="0">false</Property>
+    <Property LongName="AnyColorSpaceConverter_1_1.outputDepth" Type="4"><![CDATA[7|1|U1|U8|S8|U16|S16|S32|F32]]></Property>
+    <Property LongName="AnyColorSpaceConverter_1_1.threaded" Type="0">true</Property>
+    <Property LongName="AnyColorSpaceConverter_1_1.priority" Type="1">128</Property>
+    <Property LongName="AnyColorSpaceConverter_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="1.34.3" x="984" y="496" z="0">
+    <Input LongName="DataViewer_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1.input_0.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1.input_1.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1.internalState" Type="3"><![CDATA[100;205]]></Property>
+    <Property LongName="DataViewer_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[DataViewer_1]]></Property>
+    <Property LongName="DataViewer_1.x" Type="1">75</Property>
+    <Property LongName="DataViewer_1.y" Type="1">169</Property>
+    <Property LongName="DataViewer_1.width" Type="1">315</Property>
+    <Property LongName="DataViewer_1.height" Type="1">240</Property>
+    <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Filtrage3D_1" Model="Filtrage3D" Version="1.0" x="800" y="304" z="0">
+    <Input LongName="Filtrage3D_1.points_in" Name="points_in">
+      <Property LongName="Filtrage3D_1.points_in.readerType" Type="1">0</Property>
+      <Property LongName="Filtrage3D_1.points_in.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Filtrage3D_1.points_out" Name="points_out">
+      <Property LongName="Filtrage3D_1.points_out.subsampling" Type="1">1</Property>
+      <Property LongName="Filtrage3D_1.points_out.fifosize" Type="1">16</Property>
+      <Property LongName="Filtrage3D_1.points_out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Filtrage3D_1.x_min" Type="1">128</Property>
+    <Property LongName="Filtrage3D_1.x_max" Type="1">128</Property>
+    <Property LongName="Filtrage3D_1.y_min" Type="1">128</Property>
+    <Property LongName="Filtrage3D_1.y_max" Type="1">128</Property>
+    <Property LongName="Filtrage3D_1.z_min" Type="1">128</Property>
+    <Property LongName="Filtrage3D_1.z_max" Type="1">128</Property>
+    <Property LongName="Filtrage3D_1.radieu_min" Type="1">128</Property>
+    <Property LongName="Filtrage3D_1.radieu_max" Type="1">128</Property>
+    <Property LongName="Filtrage3D_1.box_filtre_enable" Type="0">false</Property>
+    <Property LongName="Filtrage3D_1.radius_filtre_enable" Type="0">false</Property>
+    <Property LongName="Filtrage3D_1.threaded" Type="0">true</Property>
+    <Property LongName="Filtrage3D_1.priority" Type="1">128</Property>
+    <Property LongName="Filtrage3D_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Get_Processing_Duration_1" Model="Get_Processing_Duration" Version="1.0" x="784" y="480" z="0">
+    <Input LongName="Get_Processing_Duration_1.upstreamInput" Name="upstreamInput">
+      <Property LongName="Get_Processing_Duration_1.upstreamInput.readerType" Type="1">0</Property>
+      <Property LongName="Get_Processing_Duration_1.upstreamInput.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Get_Processing_Duration_1.downstreamInput" Name="downstreamInput">
+      <Property LongName="Get_Processing_Duration_1.downstreamInput.readerType" Type="1">0</Property>
+      <Property LongName="Get_Processing_Duration_1.downstreamInput.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Get_Processing_Duration_1.timeOfIssueDiffs" Name="timeOfIssueDiffs">
+      <Property LongName="Get_Processing_Duration_1.timeOfIssueDiffs.subsampling" Type="1">1</Property>
+      <Property LongName="Get_Processing_Duration_1.timeOfIssueDiffs.fifosize" Type="1">16</Property>
+      <Property LongName="Get_Processing_Duration_1.timeOfIssueDiffs.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Get_Processing_Duration_1.nbAdditionalDownstreamInputs" Type="1">0</Property>
+    <Property LongName="Get_Processing_Duration_1.threaded" Type="0">true</Property>
+    <Property LongName="Get_Processing_Duration_1.priority" Type="1">128</Property>
+    <Property LongName="Get_Processing_Duration_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="GL2_3D_Viewer_1_1" Model="GL2_3D_Viewer" Version="1.54.7" x="952" y="224" z="0">
+    <Input LongName="GL2_3D_Viewer_1_1.object_2_data" Name="object_2_data">
+      <Property LongName="GL2_3D_Viewer_1_1.object_2_data.readerType" Type="1">2</Property>
+      <Property LongName="GL2_3D_Viewer_1_1.object_2_data.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_1_1.camera" Name="camera">
+      <Property LongName="GL2_3D_Viewer_1_1.camera.readerType" Type="1">4</Property>
+      <Property LongName="GL2_3D_Viewer_1_1.camera.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_1_1.projectionMatrix" Name="projectionMatrix">
+      <Property LongName="GL2_3D_Viewer_1_1.projectionMatrix.readerType" Type="1">2</Property>
+      <Property LongName="GL2_3D_Viewer_1_1.projectionMatrix.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_1_1.triggerRefresh" Name="triggerRefresh">
+      <Property LongName="GL2_3D_Viewer_1_1.triggerRefresh.readerType" Type="1">0</Property>
+      <Property LongName="GL2_3D_Viewer_1_1.triggerRefresh.subsampling" Type="1">1</Property>
+    </Input>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.objects_subsection_begin" Type="3" SubType="256"><![CDATA[Objects]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.nbObjects" Type="1">3</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.object_0_subsection_begin" Type="3" SubType="256"><![CDATA[Object 0]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.object_0_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_0_type" Type="4"><![CDATA[21|13|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_0_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_0_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_0_width" Type="2">100</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_0_height" Type="2">100</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_0_padding" Type="2">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_0_color" Type="1" SubType="4">0</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.object_0_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.object_1_subsection_begin" Type="3" SubType="256"><![CDATA[Object 1]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.object_1_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_1_type" Type="4"><![CDATA[21|11|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_1_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_1_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_1_axis_length" Type="2">1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.object_1_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.object_2_subsection_begin" Type="3" SubType="256"><![CDATA[Object 2]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.object_2_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_2_type" Type="4"><![CDATA[21|0|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_2_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_2_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_2_nb_samples" Type="1">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_2_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_2_size" Type="2">1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.object_2_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.objects_subsection_end" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.classes_subsection_begin" Type="3" SubType="256"><![CDATA[Classes]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.classEnabledSource" Type="4"><![CDATA[2|0|Properties|Input]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.nbClasses" Type="1">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.class_0_enabled" Type="0">true</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.classes_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.lighting_subsection_begin" Type="3" SubType="256"><![CDATA[Lighting]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.lighting_model" Type="4"><![CDATA[5|0|Ambient|Diffuse|Phong|BlinnPhong|Gaussian]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.lighting_attenuation" Type="2">9.999999747e-005</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.lighting_sqr_attenuation" Type="0">false</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.lighting_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.scene_subsection_begin" Type="3" SubType="256"><![CDATA[Scene]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.background_color" Type="1" SubType="4">8388608</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.wireframe_rendering" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.display_axis" Type="0">true</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.scene_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.viewport_subsection_begin" Type="3" SubType="256"><![CDATA[Viewport]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.cameraType" Type="4"><![CDATA[7|0|Standard|Anaglyph (red-blue)|Anaglyph (red-cyan)|Anaglyph (red-green)|Anaglyph (blue-red)|Anaglyph (cyan-red)|Anaglyph (green-red)]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.zFocus" Type="2">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.eyeDistance" Type="2">0.009999999776</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.camera_mode" Type="4"><![CDATA[5|3|Fixed|Key Switcher|Orbiter|Trackball|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.camera_position" Type="3"><![CDATA[-10.0 0.0 10.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.camera_look_at" Type="3"><![CDATA[10.0 0.0 0.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.camera_up" Type="3"><![CDATA[0.0 0.0 1.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.camera_target" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.projection" Type="4"><![CDATA[3|0|Perspective|Orthogonal|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.zNear" Type="2">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.zFar" Type="2">10000</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.fovy" Type="2">45</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.left" Type="1">1194</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.top" Type="1">270</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.width" Type="1">640</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.height" Type="1">480</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.sequentialRender" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.keepWindowAspectRatio" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.updateWinGeomOnDeath" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.fullscreen" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.monitorForFullscreen" Type="4"><![CDATA[1|0|0 (0, 0, 1920, 1080)]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.onscreen" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.offscreen" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.antialiasing" Type="4"><![CDATA[5|0|None|FSAA 2x|FSAA 4x|FSAA 8x|FSAA 16x]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.displayTitleBar" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.displayBorders" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.refresh_mode" Type="4"><![CDATA[3|0|Fixed|On Demand|Input based]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.refresh_period" Type="1">50000</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.verbose" Type="0">false</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.window_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1.threaded" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.priority" Type="1">128</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="GL2_3D_Viewer_1_1_1" Model="GL2_3D_Viewer" Version="1.54.7" x="544" y="424" z="0">
+    <Input LongName="GL2_3D_Viewer_1_1_1.object_2_data" Name="object_2_data">
+      <Property LongName="GL2_3D_Viewer_1_1_1.object_2_data.readerType" Type="1">2</Property>
+      <Property LongName="GL2_3D_Viewer_1_1_1.object_2_data.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_1_1_1.camera" Name="camera">
+      <Property LongName="GL2_3D_Viewer_1_1_1.camera.readerType" Type="1">4</Property>
+      <Property LongName="GL2_3D_Viewer_1_1_1.camera.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_1_1_1.projectionMatrix" Name="projectionMatrix">
+      <Property LongName="GL2_3D_Viewer_1_1_1.projectionMatrix.readerType" Type="1">2</Property>
+      <Property LongName="GL2_3D_Viewer_1_1_1.projectionMatrix.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_1_1_1.triggerRefresh" Name="triggerRefresh">
+      <Property LongName="GL2_3D_Viewer_1_1_1.triggerRefresh.readerType" Type="1">0</Property>
+      <Property LongName="GL2_3D_Viewer_1_1_1.triggerRefresh.subsampling" Type="1">1</Property>
+    </Input>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.objects_subsection_begin" Type="3" SubType="256"><![CDATA[Objects]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.nbObjects" Type="1">3</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.object_0_subsection_begin" Type="3" SubType="256"><![CDATA[Object 0]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_0_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_0_type" Type="4"><![CDATA[21|13|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_0_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_0_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_0_width" Type="2">100</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_0_height" Type="2">100</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_0_padding" Type="2">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_0_color" Type="1" SubType="4">0</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.object_0_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.object_1_subsection_begin" Type="3" SubType="256"><![CDATA[Object 1]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_1_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_1_type" Type="4"><![CDATA[21|11|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_1_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_1_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_1_axis_length" Type="2">1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.object_1_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.object_2_subsection_begin" Type="3" SubType="256"><![CDATA[Object 2]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_2_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_2_type" Type="4"><![CDATA[21|0|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_2_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_2_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_2_nb_samples" Type="1">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_2_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.object_2_size" Type="2">1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.object_2_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.objects_subsection_end" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.classes_subsection_begin" Type="3" SubType="256"><![CDATA[Classes]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.classEnabledSource" Type="4"><![CDATA[2|0|Properties|Input]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.nbClasses" Type="1">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.class_0_enabled" Type="0">true</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.classes_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.lighting_subsection_begin" Type="3" SubType="256"><![CDATA[Lighting]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.lighting_model" Type="4"><![CDATA[5|0|Ambient|Diffuse|Phong|BlinnPhong|Gaussian]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.lighting_attenuation" Type="2">9.999999747e-005</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.lighting_sqr_attenuation" Type="0">false</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.lighting_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.scene_subsection_begin" Type="3" SubType="256"><![CDATA[Scene]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.background_color" Type="1" SubType="4">8388608</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.wireframe_rendering" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.display_axis" Type="0">true</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.scene_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.viewport_subsection_begin" Type="3" SubType="256"><![CDATA[Viewport]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.cameraType" Type="4"><![CDATA[7|0|Standard|Anaglyph (red-blue)|Anaglyph (red-cyan)|Anaglyph (red-green)|Anaglyph (blue-red)|Anaglyph (cyan-red)|Anaglyph (green-red)]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.zFocus" Type="2">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.eyeDistance" Type="2">0.009999999776</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.camera_mode" Type="4"><![CDATA[5|3|Fixed|Key Switcher|Orbiter|Trackball|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.camera_position" Type="3"><![CDATA[-10.0 0.0 10.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.camera_look_at" Type="3"><![CDATA[10.0 0.0 0.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.camera_up" Type="3"><![CDATA[0.0 0.0 1.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.camera_target" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.projection" Type="4"><![CDATA[3|0|Perspective|Orthogonal|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.zNear" Type="2">1</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.zFar" Type="2">10000</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.fovy" Type="2">45</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.left" Type="1">645</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.top" Type="1">290</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.width" Type="1">640</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.height" Type="1">480</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.sequentialRender" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.keepWindowAspectRatio" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.updateWinGeomOnDeath" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.fullscreen" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.monitorForFullscreen" Type="4"><![CDATA[1|0|0 (0, 0, 1920, 1080)]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.onscreen" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.offscreen" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.antialiasing" Type="4"><![CDATA[5|0|None|FSAA 2x|FSAA 4x|FSAA 8x|FSAA 16x]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.displayTitleBar" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.displayBorders" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.refresh_mode" Type="4"><![CDATA[3|0|Fixed|On Demand|Input based]]></Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.refresh_period" Type="1">50000</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.verbose" Type="0">false</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1_1.window_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1_1_1.threaded" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.priority" Type="1">128</Property>
+    <Property LongName="GL2_3D_Viewer_1_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="hdl_64e_s2_convert_to_XYZ_1_1" Model="hdl_64e_s2_convert_to_XYZ" Version="3.3.1" x="696" y="96" z="0">
+    <Input LongName="hdl_64e_s2_convert_to_XYZ_1_1.dists" Name="dists">
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.dists.readerType" Type="1">0</Property>
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.dists.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="hdl_64e_s2_convert_to_XYZ_1_1.rotation" Name="rotation">
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.rotation.readerType" Type="1">0</Property>
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.rotation.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="hdl_64e_s2_convert_to_XYZ_1_1.intensities" Name="intensities">
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.intensities.readerType" Type="1">0</Property>
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.intensities.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="hdl_64e_s2_convert_to_XYZ_1_1.block_type" Name="block_type">
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.block_type.readerType" Type="1">0</Property>
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.block_type.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="hdl_64e_s2_convert_to_XYZ_1_1.XYZ_points" Name="XYZ_points">
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.XYZ_points.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.XYZ_points.fifosize" Type="1">8</Property>
+      <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.XYZ_points.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.calibration_file" Type="3" SubType="80"><![CDATA[X:/adas_rtmaps/TP1/circuit1/VLP16_calibration.xml]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../TP1/circuit1/VLP16_calibration.xml]]></Relative></Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.force_using_full_calibration_file" Type="0">false</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.ignore_zero_intensity_points" Type="0">true</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.output_laser_IDs" Type="0">false</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.output_calibrated_intensities" Type="0">false</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.output_type" Type="4"><![CDATA[5|0|3D points (XYZ)|Colored points (XYZRGB - Height color scale)|Colored points XYZRGB - Laser ID color)|Colored intensities points (XYZRGB - Color scale)|Colored intensities points (XYZRGB - Grey)]]></Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.use_output_meters" Type="0">true</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.add_heading_filter" Type="0">false</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.add_distance_filter" Type="0">false</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.add_site_filter" Type="0">false</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.VLP16_HDL32_timing_compensation" Type="0">false</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.VLP16_HDL32_heading_subsampling" Type="0">false</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.threaded" Type="0">true</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.priority" Type="1">128</Property>
+    <Property LongName="hdl_64e_s2_convert_to_XYZ_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="hdl_64E_s2_udp_decoder_1_1" Model="hdl_64E_s2_udp_decoder" Version="3.5.1" x="480" y="64" z="0">
+    <Input LongName="hdl_64E_s2_udp_decoder_1_1.iStream8" Name="iStream8">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.iStream8.readerType" Type="1">0</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.iStream8.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.dists" Name="dists">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.dists.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.dists.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.dists.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.rotation" Name="rotation">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.rotation.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.rotation.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.rotation.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.intensities" Name="intensities">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.intensities.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.intensities.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.intensities.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.block_type" Name="block_type">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.block_type.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.block_type.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.block_type.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.temperature" Name="temperature">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.temperature.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.temperature.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.temperature.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.firmware_version" Name="firmware_version">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.firmware_version.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.firmware_version.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.firmware_version.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.hardware_timestamp" Name="hardware_timestamp">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.hardware_timestamp.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.hardware_timestamp.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.hardware_timestamp.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.software_timestamp" Name="software_timestamp">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.software_timestamp.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.software_timestamp.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.software_timestamp.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.return_mode" Name="return_mode">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.return_mode.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.return_mode.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.return_mode.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="hdl_64E_s2_udp_decoder_1_1.footer" Name="footer">
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.footer.subsampling" Type="1">1</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.footer.fifosize" Type="1">16</Property>
+      <Property LongName="hdl_64E_s2_udp_decoder_1_1.footer.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="hdl_64E_s2_udp_decoder_1_1.accumulate_360_degrees" Type="0">true</Property>
+    <Property LongName="hdl_64E_s2_udp_decoder_1_1.verbose" Type="0">false</Property>
+    <Property LongName="hdl_64E_s2_udp_decoder_1_1.revolution_limit" Type="1">18000</Property>
+    <Property LongName="hdl_64E_s2_udp_decoder_1_1.p_sensor_model" Type="4"><![CDATA[6|0|Auto detect|VLP-16 (Puck, Puck Hi-Res)|HDL-32|VLP-32C (Ultra Puck)|HDL-64|VLS-128]]></Property>
+    <ReadOnlyProperty LongName="hdl_64E_s2_udp_decoder_1_1.p_detected_sensor_model" Type="3"><![CDATA[VLP-16]]></ReadOnlyProperty>
+    <Property LongName="hdl_64E_s2_udp_decoder_1_1.threaded" Type="0">false</Property>
+    <Property LongName="hdl_64E_s2_udp_decoder_1_1.priority" Type="1">128</Property>
+    <Property LongName="hdl_64E_s2_udp_decoder_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="ImageViewer_1" Model="ImageViewer" Version="1.23.2" x="128" y="184" z="0">
+    <Input LongName="ImageViewer_1.input" Name="input">
+      <Property LongName="ImageViewer_1.input.readerType" Type="1">2</Property>
+      <Property LongName="ImageViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="ImageViewer_1.oMouseClick" Name="oMouseClick">
+      <Property LongName="ImageViewer_1.oMouseClick.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_1.oMouseClick.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_1.oMouseClick.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_1.oROI" Name="oROI">
+      <Property LongName="ImageViewer_1.oROI.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_1.oROI.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_1.oROI.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_1.oWindowEvent" Name="oWindowEvent">
+      <Property LongName="ImageViewer_1.oWindowEvent.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_1.oWindowEvent.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_1.oWindowEvent.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="ImageViewer_1.left" Type="1">117</Property>
+    <Property LongName="ImageViewer_1.top" Type="1">455</Property>
+    <Property LongName="ImageViewer_1.width" Type="1">640</Property>
+    <Property LongName="ImageViewer_1.height" Type="1">296</Property>
+    <Property LongName="ImageViewer_1.autoResize" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.fullscreen" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.monitorForFullscreen" Type="1">1</Property>
+    <Property LongName="ImageViewer_1.displayTitleBar" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.displayBorder" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.engine" Type="4"><![CDATA[4|2|Direct Show|GDI|OpenGL|Direct Show (VMR 7)]]></Property>
+    <Property LongName="ImageViewer_1.keepAspectRatio" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.imageAspect" Type="4"><![CDATA[3|0|Anamorphic|Letterbox|Pan And Scan]]></Property>
+    <Property LongName="ImageViewer_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
+    <Property LongName="ImageViewer_1.sequentialRender" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.verbose" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.priority" Type="1">128</Property>
+    <Property LongName="ImageViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="ImageViewer_2" Model="ImageViewer" Version="1.23.2" x="328" y="480" z="0">
+    <Input LongName="ImageViewer_2.input" Name="input">
+      <Property LongName="ImageViewer_2.input.readerType" Type="1">2</Property>
+      <Property LongName="ImageViewer_2.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="ImageViewer_2.oMouseClick" Name="oMouseClick">
+      <Property LongName="ImageViewer_2.oMouseClick.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_2.oMouseClick.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_2.oMouseClick.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_2.oROI" Name="oROI">
+      <Property LongName="ImageViewer_2.oROI.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_2.oROI.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_2.oROI.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_2.oWindowEvent" Name="oWindowEvent">
+      <Property LongName="ImageViewer_2.oWindowEvent.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_2.oWindowEvent.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_2.oWindowEvent.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="ImageViewer_2.left" Type="1">517</Property>
+    <Property LongName="ImageViewer_2.top" Type="1">306</Property>
+    <Property LongName="ImageViewer_2.width" Type="1">0</Property>
+    <Property LongName="ImageViewer_2.height" Type="1">0</Property>
+    <Property LongName="ImageViewer_2.autoResize" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.fullscreen" Type="0">false</Property>
+    <Property LongName="ImageViewer_2.monitorForFullscreen" Type="1">1</Property>
+    <Property LongName="ImageViewer_2.displayTitleBar" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.displayBorder" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.engine" Type="4"><![CDATA[4|2|Direct Show|GDI|OpenGL|Direct Show (VMR 7)]]></Property>
+    <Property LongName="ImageViewer_2.keepAspectRatio" Type="0">false</Property>
+    <Property LongName="ImageViewer_2.imageAspect" Type="4"><![CDATA[3|0|Anamorphic|Letterbox|Pan And Scan]]></Property>
+    <Property LongName="ImageViewer_2.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
+    <Property LongName="ImageViewer_2.sequentialRender" Type="0">false</Property>
+    <Property LongName="ImageViewer_2.verbose" Type="0">false</Property>
+    <Property LongName="ImageViewer_2.threaded" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.priority" Type="1">128</Property>
+    <Property LongName="ImageViewer_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Player_1_1" Model="Player" Version="2.14.1" x="40" y="24" z="0">
+    <Output LongName="Player_1_1.CustomRawSocketClient_velodyne.output" Name="CustomRawSocketClient_velodyne.output">
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.fifosize" Type="1">128</Property>
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.periodic" Type="0">false</Property>
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.autopause" Type="0">false</Property>
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.threaded" Type="0">false</Property>
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.priority" Type="1">128</Property>
+      <Property LongName="Player_1_1.CustomRawSocketClient_velodyne.output.replayThreadPriority" Type="1">128</Property>
+    </Output>
+    <Output LongName="Player_1_1.Video4Linux_1.output" Name="Video4Linux_1.output">
+      <Property LongName="Player_1_1.Video4Linux_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.periodic" Type="0">false</Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.autopause" Type="0">false</Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.threaded" Type="0">true</Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.priority" Type="1">128</Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.replayThreadPriority" Type="1">128</Property>
+      <Property LongName="Player_1_1.Video4Linux_1.output.video_stream_copy_output_buffer" Type="1">0</Property>
+    </Output>
+    <Property LongName="Player_1_1.file" Type="3" SubType="80"><![CDATA[X:\adas_rtmaps\TP1\circuit1_lane_departure\RecFile_1_20230103_154425.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../TP1/circuit1_lane_departure/RecFile_1_20230103_154425.rec]]></Relative></Property>
+    <Property LongName="Player_1_1.offset" Type="1">0</Property>
+    <Property LongName="Player_1_1.beginning" Type="1">0</Property>
+    <Property LongName="Player_1_1.end" Type="1">0</Property>
+    <Property LongName="Player_1_1.timelag" Type="1">100000</Property>
+    <Property LongName="Player_1_1.update" Type="0">true</Property>
+    <ReadOnlyProperty LongName="Player_1_1.replayPath" Type="3"><![CDATA[X:\adas_rtmaps\TP1\circuit1_lane_departure/]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1_1.comments" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1_1.ahead" Type="1">87316</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1_1.percentage" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1_1.time" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1_1.first" Type="1">224103150</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1_1.last" Type="1">227999740</ReadOnlyProperty>
+    <Property LongName="Player_1_1.serverThreadPriority" Type="1">200</Property>
+    <Property LongName="Player_1_1.mainClientThreadPriority" Type="1">200</Property>
+    <Property LongName="Player_1_1.threaded" Type="0">true</Property>
+    <Property LongName="Player_1_1.priority" Type="1">200</Property>
+    <Property LongName="Player_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="RecFile_1" Model="RecFile" Version="2.15.2" x="320" y="344" z="0">
+    <Input LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.input" Name="input">
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.input.readerType" Type="1">0</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.input.subsampling" Type="1">1</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.trigger" Type="0">true</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.triggerAtStart" Type="4"><![CDATA[3|0|Do not change|True|False]]></Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.triggerBufferTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.triggerBufferSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.triggerReleaseTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.triggerReleaseSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.recordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.alias" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.record_to_subfolder" Type="0">false</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.subfolder_relative_path" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.useTimestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.threaded" Type="0">true</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.priority" Type="1">128</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.timestamp" Type="0">true</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.timeOfIssue" Type="0">false</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.timeFormat" Type="4"><![CDATA[4|3|YYYY/MM/DD hh:mm:ss.etc UTC|YYYY/MM/DD hh:mm:ss.etc Local Time|hh:mm:ss.etc|no format]]></Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.append_utc_local_suffix" Type="0">true</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.separatorChar" Type="4"><![CDATA[4|0|;|,|Tab|.]]></Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.timestampingPrecision" Type="4"><![CDATA[2|1|Milliseconds|Microseconds]]></Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.doubles_precision" Type="1">12</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.depacketize" Type="0">false</Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.headerType" Type="4"><![CDATA[3|0|None|Manual|Auto (based on upstream graph)]]></Property>
+      <Property LongName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.manualHeader" Type="3"><![CDATA[Channel A; Channel B; Channel C;]]></Property>
+    </Input>
+    <Property LongName="RecFile_1.path" Type="3" SubType="32"><![CDATA[X:/adas_rtmaps/TP3/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../TP3]]></Relative></Property>
+    <ReadOnlyProperty LongName="RecFile_1.recordPath" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <Property LongName="RecFile_1.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+    <Property LongName="RecFile_1.comments" Type="3"><![CDATA[]]></Property>
+    <Property LongName="RecFile_1.blackbox" Type="1">0</Property>
+    <Property LongName="RecFile_1.record_buffer_delay" Type="1">1000000</Property>
+    <Property LongName="RecFile_1.delay" Type="1">0</Property>
+    <Property LongName="RecFile_1.createFolder" Type="0">true</Property>
+    <Property LongName="RecFile_1.record_to_subfolders" Type="0">false</Property>
+    <Property LongName="RecFile_1.add_record_start_time_to_folder_and_file_names" Type="0">false</Property>
+    <Property LongName="RecFile_1.allow_record_overwrite" Type="0">false</Property>
+    <ReadOnlyProperty LongName="RecFile_1.record_start_time" Type="3"><![CDATA[20230119_121945961000]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="RecFile_1.triggered_record_methods" Type="3"><![CDATA[Get_Processing_Duration_1.timeOfIssueDiffs]]></ReadOnlyProperty>
+    <Property LongName="RecFile_1.threaded" Type="0">false</Property>
+    <Property LongName="RecFile_1.priority" Type="1">128</Property>
+    <Property LongName="RecFile_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="reechantilloner_1" Model="reechantilloner" Version="1.0" x="232" y="520" z="0">
+    <Input LongName="reechantilloner_1.input" Name="input">
+      <Property LongName="reechantilloner_1.input.readerType" Type="1">2</Property>
+      <Property LongName="reechantilloner_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="reechantilloner_1.output" Name="output">
+      <Property LongName="reechantilloner_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="reechantilloner_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="reechantilloner_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="reechantilloner_1.threaded" Type="0">true</Property>
+    <Property LongName="reechantilloner_1.priority" Type="1">128</Property>
+    <Property LongName="reechantilloner_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="Player_1_1.Video4Linux_1.output" Input="AnyColorSpaceConverter_1_1.imgInput">
+    <Replay Method="video_file"/>
+  </Connection>
+  <Connection Output="Get_Processing_Duration_1.timeOfIssueDiffs" Input="DataViewer_1.input_0"/>
+  <Connection Output="hdl_64e_s2_convert_to_XYZ_1_1.XYZ_points" Input="Filtrage3D_1.points_in"/>
+  <Connection Output="Player_1_1.CustomRawSocketClient_velodyne.output" Input="Get_Processing_Duration_1.upstreamInput">
+    <Replay Method="rrmstream"/>
+  </Connection>
+  <Connection Output="Filtrage3D_1.points_out" Input="Get_Processing_Duration_1.downstreamInput"/>
+  <Connection Output="Filtrage3D_1.points_out" Input="GL2_3D_Viewer_1_1.object_2_data"/>
+  <Connection Output="hdl_64e_s2_convert_to_XYZ_1_1.XYZ_points" Input="GL2_3D_Viewer_1_1_1.object_2_data"/>
+  <Connection Output="hdl_64E_s2_udp_decoder_1_1.dists" Input="hdl_64e_s2_convert_to_XYZ_1_1.dists"/>
+  <Connection Output="hdl_64E_s2_udp_decoder_1_1.rotation" Input="hdl_64e_s2_convert_to_XYZ_1_1.rotation"/>
+  <Connection Output="hdl_64E_s2_udp_decoder_1_1.intensities" Input="hdl_64e_s2_convert_to_XYZ_1_1.intensities"/>
+  <Connection Output="hdl_64E_s2_udp_decoder_1_1.block_type" Input="hdl_64e_s2_convert_to_XYZ_1_1.block_type"/>
+  <Connection Output="Player_1_1.CustomRawSocketClient_velodyne.output" Input="hdl_64E_s2_udp_decoder_1_1.iStream8">
+    <Replay Method="rrmstream"/>
+  </Connection>
+  <Connection Output="Player_1_1.Video4Linux_1.output" Input="ImageViewer_1.input">
+    <Replay Method="video_file"/>
+  </Connection>
+  <Connection Output="reechantilloner_1.output" Input="ImageViewer_2.input"/>
+  <Connection Output="AnyColorSpaceConverter_1_1.IplImageOutput" Input="reechantilloner_1.input"/>
+  <Connection Input="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.input" Output="Get_Processing_Duration_1.timeOfIssueDiffs">
+    <Record Method="tabbed_text" neverskipping="false" useTimestamp="false"/>
+  </Connection>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="AnyColorSpaceConverter_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="GL2_3D_Viewer_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="GL2_3D_Viewer_1_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="hdl_64e_s2_convert_to_XYZ_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="hdl_64E_s2_udp_decoder_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Player_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="AnyColorSpaceConverter_1_1.imgInput" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="Filtrage3D_1.points_in" color="0"/>
+    <ConnectionShape InstanceName="Get_Processing_Duration_1.downstreamInput" color="0"/>
+    <ConnectionShape InstanceName="Get_Processing_Duration_1.upstreamInput" color="0"/>
+    <ConnectionShape InstanceName="GL2_3D_Viewer_1_1.object_2_data" color="0"/>
+    <ConnectionShape InstanceName="GL2_3D_Viewer_1_1_1.object_2_data" color="0"/>
+    <ConnectionShape InstanceName="hdl_64e_s2_convert_to_XYZ_1_1.block_type" color="0"/>
+    <ConnectionShape InstanceName="hdl_64e_s2_convert_to_XYZ_1_1.dists" color="0"/>
+    <ConnectionShape InstanceName="hdl_64e_s2_convert_to_XYZ_1_1.intensities" color="0"/>
+    <ConnectionShape InstanceName="hdl_64e_s2_convert_to_XYZ_1_1.rotation" color="0"/>
+    <ConnectionShape InstanceName="hdl_64E_s2_udp_decoder_1_1.iStream8" color="0"/>
+    <ConnectionShape InstanceName="ImageViewer_1.input" color="0"/>
+    <ConnectionShape InstanceName="ImageViewer_2.input" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.Get_Processing_Duration_1.timeOfIssueDiffs.input" color="0"/>
+    <ConnectionShape InstanceName="reechantilloner_1.input" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>

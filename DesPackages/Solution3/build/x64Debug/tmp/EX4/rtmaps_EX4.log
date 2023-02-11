@@ -1,0 +1,6 @@
+﻿  maps_compteur.cpp
+x:\adas_rtmaps\solution3\solution3\ex4.u\src\maps_compteur.cpp(94): warning C4244: 'initialisation' : conversion de 'MAPSInt32' en 'float', perte possible de données
+  LINK : X:\adas_rtmaps\Solution3\Solution3\packages\debug\EX4.pck introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
+     Création de la bibliothèque X:\adas_rtmaps\Solution3\Solution3\build\x64Debug\tmp\EX4\EX4.lib et de l'objet X:\adas_rtmaps\Solution3\Solution3\build\x64Debug\tmp\EX4\EX4.exp
+  rtmaps_EX4.vcxproj -> X:\adas_rtmaps\Solution3\Solution3\packages\debug\EX4.pck
+  RTMaps Package Signature
